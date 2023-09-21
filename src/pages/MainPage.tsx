@@ -13,7 +13,7 @@ const MainPage = () => {
 
     return (
         <>
-            <div className={styles.header__navigation}>
+            <div className={styles.container__navigation}>
                 <img src={ilustration} alt='Background illustration' id={styles.ilustration} />
                 <nav className={styles.navigation}>
                     <img src={logo} alt='Logo' className={styles.navigation__logo} />
@@ -31,9 +31,20 @@ const MainPage = () => {
                             <li>LOGIN</li>
                         </ul>
                     </div>
-
                 </nav>
             </div>
+
+            <section className={styles.info}>
+               <p><span>NEW</span> MONOGRAPH DASHBOARD</p>
+               <h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+               <p className={styles.info__style}>Project planning and time tracking for agile teams</p>
+               <div className={styles.info__button}>
+                <button>
+                    SCHEDULE A DEMO
+                </button>
+                <p>TO SEE A PREVIEW</p>
+               </div>
+            </section>
 
         </>
     );
