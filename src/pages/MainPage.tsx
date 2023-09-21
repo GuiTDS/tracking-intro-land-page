@@ -10,7 +10,6 @@ const MainPage = () => {
     const icon = isOpen ? closeIcon : hamburguerLogo;
 
 
-
     return (
         <>
             <div className={styles.container__navigation}>
@@ -35,15 +34,15 @@ const MainPage = () => {
             </div>
 
             <section className={styles.info}>
-               <p><span>NEW</span> MONOGRAPH DASHBOARD</p>
-               <h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
-               <p className={styles.info__style}>Project planning and time tracking for agile teams</p>
-               <div className={styles.info__button}>
-                <button>
-                    SCHEDULE A DEMO
-                </button>
-                <p>TO SEE A PREVIEW</p>
-               </div>
+                <p><span>NEW</span> MONOGRAPH DASHBOARD</p>
+                <h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+                <p className={styles.info__style}>Project planning and time tracking for agile teams</p>
+                <div className={styles.info__button}>
+                    <button>
+                        SCHEDULE A DEMO
+                    </button>
+                    <p>TO SEE A PREVIEW</p>
+                </div>
             </section>
 
         </>
