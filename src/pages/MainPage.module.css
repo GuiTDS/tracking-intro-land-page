@@ -124,6 +124,10 @@
     button:hover, li:hover {
         cursor: pointer;
     }
+
+    li:hover {
+        text-decoration: underline;
+    }
     .navigation {
         margin: 2rem 8rem;
     }
@@ -202,5 +206,9 @@
         display: flex;
         width: min-content;
         
+    }
+
+    .info__button button:hover {
+        background-color: rgba(255, 92, 92, 0.8);
     }
 }
