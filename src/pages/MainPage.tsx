@@ -13,7 +13,7 @@ const MainPage = () => {
     return (
         <>
             <div className={styles.container__navigation}>
-                <img src={ilustration} alt='Background illustration' id={styles.ilustration} />
+
                 <nav className={styles.navigation}>
                     <img src={logo} alt='Logo' className={styles.navigation__logo} />
 
@@ -31,6 +31,11 @@ const MainPage = () => {
                         </ul>
                     </div>
                 </nav>
+                <div className={styles.navigation__background}>
+                    <img src={ilustration} alt='Background illustration' className={styles.ilustration}/>
+                </div>
+
+
             </div>
 
             <section className={styles.info}>

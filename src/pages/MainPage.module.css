@@ -1,15 +1,9 @@
 @import url('../styles/_variables.css');
 
-#ilustration {
-    height: 31vh;
-    position: absolute;
-    top: 8rem;
-    
-}
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 2rem; 
+    margin: 2rem 2rem;
     font-family: var(--barlow-condensed);
     font-weight: 700;
     font-size: var(--font-size);
@@ -26,16 +20,17 @@
 }
 
 .navigation__list {
-    position: relative;
-    box-shadow: 0px 0px 25px 7px rgba(0,0,0,0.1);
+    position: absolute;
+    box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.1);
     top: 5rem;
     right: 2rem;
     background-color: white;
     min-width: 82vw;
     padding: 1rem 0;
     text-align: center;
-    transform: translateX(150%);
+    transform: translateX(-120%);
     transition: 0.7s;
+    z-index: 1000;
 }
 
 .navigation__list li:last-child {
@@ -49,22 +44,28 @@
 
 .navigation__list hr {
     width: 70vw;
-    
-    
 }
 
 .navigation__list li {
     margin: 1rem 0 2rem;
 }
 
+.navigation__background {
+    min-width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+
+
 /* info section */
 .info {
-    margin: 13rem 2rem 0;
+    margin: 0rem 2rem 2rem;
     font-family: var(--barlow-condensed);
     font-size: var(--font-size);
 }
 
-.info p:first-child{
+.info p:first-child {
     letter-spacing: 4px;
     color: var(--grayish-blue);
 }
